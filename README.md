@@ -5,10 +5,10 @@ An online text-editor which allows you to edit and format text like a notepad.
 
 
 ## Technologies:
-1.HTML
-2.CSS
-3.JAVASCRIPT
-
+1. HTML
+2. CSS
+3. JAVASCRIPT
+ 
 ## Usage:
 Follow below steps to lauch the app using:
 1. Copy the code from the file
