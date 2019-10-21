@@ -1,0 +1,38 @@
+.text-bold{
+    font-weight: bold;
+}
+
+.text-unbold{
+    font-weight: normal;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.text-unitalic{
+    font-style: normal;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-normal{
+    text-decoration:none;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-justify{
+    text-align: justify;
+}
+.left{
+    text-align:left;
+}
