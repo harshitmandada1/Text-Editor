@@ -13,7 +13,7 @@ let boldClickListener = (event) => {
     let range = selection.getRangeAt(0);
     let parent = selection.anchorNode.parentElement;
     
-
+//Checking if the parent element is div
     if(parent == div){
         let newspan = document.createElement('span');
         newspan.classList.add('text-bold');
@@ -26,6 +26,7 @@ let boldClickListener = (event) => {
     }
     else
     {
+        //checking if the text already contains bold
     if(parent.classList.contains('text-bold')){
         let newspan = document.createElement('span');
         newspan.classList.add('text-unbold');
@@ -37,6 +38,7 @@ let boldClickListener = (event) => {
     }
 
         else{
+            //of the parent is not div
             let newspan = document.createElement('span');
             newspan.classList.add('text-bold');
             newspan.textContent=selection;
@@ -175,7 +177,7 @@ leftalignBtn.addEventListener('click',leftalignClickListener);
 rightalignBtn.addEventListener('click', rightalignClickListener);
 justifyBtn.addEventListener('click', justifyClickListener);
 
-
+//Chceking the tags to be highlighted
 function calculate(n,PA){
     var p = n.parentElement;
     if(p.tagName == 'SPAN'|| p.tagName == 'A'){
@@ -194,12 +196,11 @@ div.addEventListener('keyup', highlight);
 div.addEventListener('click', highlight);
 
 
-
-    //let highlight = function()
+ //function which get the tags to be highlighted
     function highlight(){
         var selection = window.getSelection();
         var list = [];
-        calculate(selection.getRangeAt(0).commonAncestorContainer, list);
+        calculate(selection.getRangeAt(0).commonAncestorContainer, list); // get all the containers which are common
         console.log(list);
 
     if(list.includes("text-bold"))
